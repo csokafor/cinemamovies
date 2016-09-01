@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prefs_cinema_options">
+        <item>@string/pref_cinema_label_lagos</item>
+        <item>@string/pref_cinema_label_ikeja</item>
+        <item>@string/pref_cinema_label_abuja</item>
+        <item>@string/pref_cinema_label_sec_abuja</item>
+        <item>@string/pref_cinema_label_uyo</item>
+        <item>@string/pref_cinema_label_warri</item>
+    </string-array>
+
+    <string-array name="pref_cinema_values">
+        <item>@string/pref_cinema_lagos</item>
+        <item>@string/pref_cinema_ikeja</item>
+        <item>@string/pref_cinema_abuja</item>
+        <item>@string/pref_cinema_sec_abuja</item>
+        <item>@string/pref_cinema_uyo</item>
+        <item>@string/pref_cinema_warri</item>
+    </string-array>
+</resources>

@@ -1,0 +1,208 @@
+<!-- Master layout. -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="left"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header: Title, Genre -->
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/movie_title_textview"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/movie_genre_textview"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/grey_700"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:gravity="left"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:gravity="left"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/movie_poster_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            <!-- rating and length -->
+            <LinearLayout
+                android:gravity="left"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/movie_rating_textview"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/movie_length_textview"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <!-- critcs and audience score -->
+                <LinearLayout
+                    android:gravity="left"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:fontFamily="sans-serif-condensed"
+                        android:id="@+id/movie_scorecaption_textview"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="@string/rating"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:fontFamily="sans-serif-condensed"
+                        android:id="@+id/movie_criticscore_textview"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/grey_700"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:fontFamily="sans-serif-condensed"
+                        android:id="@+id/movie_audiencescore_textview"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/grey_700"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- synopsis -->
+        <LinearLayout
+            android:gravity="left"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/movie_synopsis_textview"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/grey_700"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- cast -->
+        <LinearLayout
+            android:gravity="left"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/movie_castcaption_textview"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/cast"
+                android:textSize="20sp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/listview_cast"
+                android:divider="@null"></ListView>
+        </LinearLayout>
+
+        <!-- director -->
+        <LinearLayout
+            android:gravity="left"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/movie_directorcaption_textview"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/director"
+                android:textSize="20sp" />
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/movie_director_textview"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/grey_700"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- review -->
+        <LinearLayout
+            android:gravity="left"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/movie_reviewcaption_textview"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/reviews"
+                android:textSize="20sp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1px"
+                android:id="@+id/listview_review"
+                android:divider="@color/grey"></ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
